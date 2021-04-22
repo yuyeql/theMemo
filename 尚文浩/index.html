@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>台球的世界</title> 
+ <style>  @keyframes typing {
+    from { width: 0}
+}
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+ 
+.typeing {
+    font: 200% monospace;
+    font-size: 40px;
+    font-family: "楷体";
+    border-right: .08em solid;
+    width: 100ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end),
+               blink-caret .5s step-end infinite alternate; //这里的alternate是为了让光标闪烁的正常一点
+}</style>
+    <style id="css">
+        #wrap{width:200px; height:200px; border:2px solid #000; margin:100px auto;border-radius:50%; position:relative;}
+        #wrap ul{margin:0; padding:0; height:200px; position:relative; list-style:none;}
+        #wrap ul li{width:2px;  height:6px; background:#000; position:absolute; left:99px; top: 0;-webkit-transform-origin:center 100px;}
+        #wrap ul li:nth-of-type(5n+1){ height:12px;}
+        #hour{width:6px;  height:45px; background:#000; position:absolute; left:97px; top:55px;-webkit-transform-origin:bottom ;}
+        #min{width:4px;  height:65px; background:#999; position:absolute; left:98px; top:35px;-webkit-transform-origin:bottom ;}
+        #sec{width:2px;  height:80px; background:red; position:absolute; left:99px; top:20px;-webkit-transform-origin:bottom ;}
+        .icon{width:20px; height:20px; background:#000; border-radius:50%; position:absolute; left:90px; top: 90px;}
+ 
+    </style>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    background:url("photo/T6.jpeg")  no-repeat center center;   /*加载背景图*/   /* 背景图不平铺 */
+       background-size:cover;  /* 让背景图基于容器大小伸缩 */
+       background-attachment:fixed;        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */    
+}
+    .clear{
+        clear:both;
+    }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+.header {
+    height:100%;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    width:100%;
+
+}
+.headtop{
+    float: none;
+    width:110px;
+    height:20px;
+    background-color: aliceblue;}
+.headerleft{
+    float: left;
+    width:300px;
+    height: auto;
+    display:block;
+    background-color:gray; 
+    }
+    .headermiddle{
+        float: left;
+        width:500px;
+        height:auto;
+        background-color:gray;
+        
+    }
+.headerright{
+    float: left;
+    width:300px;
+    background-color: gray;
+    }
+.footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    width:100%;
+    position:fixed;
+    bottom: 0;
+}
+.centre{
+        text-align: center;
+        padding: 10px;height: 100px;
+    float: right;
+    }
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777;
+}
+.topmenu li {
+    float: left;
+}
+.topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.topmenu li a:hover {
+    background-color: #222;
+}
+.topmenu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.column {
+    float: left;
+    height:675px;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.sidemenu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.side{
+        width:100%;
+        height:250px; 
+    }
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.sidemenu li a {
+    margin-bottom: 4px;
+    display: block;
+    padding: 8px;
+    background-color: #eee;
+    text-decoration: none;
+    color: #666;
+}
+.sidemenu li a:hover {
+    background-color: #555;
+    color: white;
+}
+.sidemenu li a.active {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <script type="text/javascript" src="me.js" ></script>
+<ul class="topmenu">
+  <li><a href="#home" class="active">Home</a></li>
+  <li><a href="book.html">悠哉生活</a></li>
+  <li><a href="book.html">休闲大厅</a></li>
+  <li><a href="book.html">关于我</a></li>
+</ul>
+
+<div class="clearfix">
+  <div class="column sidemenu">
+    <ul>
+      <li><a href="solar.html" style="background:#14CEEB "><strong>点进去可以看到太阳系哦</strong></a></li>
+      <li><a href="" class="active"><b>项目列表</b></a></li>
+      <li><a href="train.html"><b>训练计划</b></a></li>
+      <li><a href="origin.html"><b>历史起源</b></a></li>
+      <li><a href="origin.html"><b>操作</b></a></li>
+      <li><a href="origin.html"><b>发展</b></a></li>
+      <li><a href="origin.html"><b>完善</b></a></li>
+    </ul>   
+    <div class="side">    <div id="wrap">
+    <ul id="list">
+    </ul>
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+        <div class="icon"></div>
+    </div>
+       <script>
+        var oList=document.getElementById("list");//获取到刻度
+        var oCss=document.getElementById("css");
+        var oHour=document.getElementById("hour");//获取时针
+        var oMin=document.getElementById("min");//获取分针
+        var oSec=document.getElementById("sec");//获取秒针
+        var oLi="";
+        var sCss="";
+        for (var i=0;i<60;i++) { //一个表盘总共是60个刻度
+            sCss+="#wrap ul li:nth-of-type("+(i+1)+"){-webkit-transform: rotate("+i*6+"deg);}";
+            oLi+="<li></li>";
+        };
+        oList.innerHTML=oLi;
+        oCss.innerHTML+=sCss;//表盘刻度渲染完成
+        toTime();
+        setInterval(toTime,1000);
+        function toTime(){
+            var oDate=new Date();//获取当前时间
+            var iSec=oDate.getSeconds();//获取当前秒
+            var iMin=oDate.getMinutes()+iSec/60;//获取当前分
+            var iHour=oDate.getHours()+iMin/60;//获取当前时
+            oSec.style.WebkitTransform="rotate("+iSec*6+"deg)";//秒针转动角度1秒6度 (表盘一圈360度一圈60秒所以一秒6度)
+            oMin.style.WebkitTransform="rotate("+iMin*6+"deg)";//分钟转动角度1分6度 (表盘一圈360度一圈60分所以一分6度)
+            oHour.style.WebkitTransform="rotate("+iHour*30+"deg)";//时针转动角度一小时30度(表盘一圈360度一圈12小时所以一小时30度)
+        };
+</script>
+</div>
+  </div>
+
+  <div class="column content">
+      <div class="header"> 
+          <br><br>
+        <div class="headerleft"></div>
+        <div class="headermiddle"></div>
+        <div class="headerright"></div>
+          <div class="clear"></div>
+           <img src="photo/4.gif">
+          <br><br><br><br><br><br>
+          <h2 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'" >
+             "Every gentleman plays billiards, but someone who plays billiards to well is no gentleman." <br><br></h2>
+        <h3 style="text-align: right">————Thomas Jefferson; </h3>
+  </div>
+</div>  
+</div>
+    
+    <div class="centre">  <p class="typeing" >Welcome to billiards bar!🤞</p></div>
+<br> 
+<div class="footer" style="text-align: center">  
+<a href="thanks.html"> <button class="button">❤</button>
+<button class="button button2">❤❤</button>
+<button class="button button3">❤❤❤</button>
+<button class="button button4">😄</button>
+<button class="button button4">😁</button>
+<button class="button button4">😊</button>
+<button class="button button5">😥</button>
+<button class="button button5">😡</button>
+<button class="button button5">😭</button>    
+<button class="button">❤❤❤</button>
+<button class="button button2">❤❤</button>
+<button class="button button3">❤</button></a>
+
+</div>
+
+</body>
+</html>

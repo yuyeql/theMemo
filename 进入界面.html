@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>开心体育网</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#center{
+			text-align: center;
+		
+		}
+		h1{
+		
+		}
+		.bg {display: table;width: 100%;height: 100%;padding: 100px 0;
+		text-align: center;color: black;background: url(img/sky.png) no-repeat center fixed;}
+		#bg {display: table;width: 100%;height: 100%;padding: 100px 0;
+		text-align: center;color: black;background: url(img/俩男孩.jpg) no-repeat center fixed;}
+		.button{
+			text-align: ;
+		}
+	</style>
+</head>
+<body class="video">
+<!-- <div class="bg"></div> -->
+<br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+
+<div1 class="jumbotron" id="bg" >
+	
+	<div class="container" id="center">
+		<h1><span style="color: red;">开</span><span style="color:yellow;">心</span><span style="color:blue;">体育网</span></h1>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----精彩运动，有趣新闻.</p>
+		<p><a class="btn btn-primary btn-info" role="button " href="index.html" target="_blank">
+			点击进入</a>
+		</p>
+	</div>
+</div>
+</div>
+<br /><br /><br /><br />
+<!-- <div class="button"><p >2020-2020&copy;KaiXinSports</p></div> -->
+</body>
+<script>(function($){
+  $.fn.snow = function(options){
+  var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+  documentHeight     = $(document).height(),
+  documentWidth  = $(document).width(),
+  defaults = {
+     minSize   : 10,
+     maxSize   : 20,
+     newOn     : 1000,
+     flakeColor : "skyblue" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+  },
+  options = $.extend({}, defaults, options);
+  var interval= setInterval( function(){
+  var startPositionLeft = Math.random() * documentWidth - 100,
+  startOpacity = 0.5 + Math.random(),
+  sizeFlake = options.minSize + Math.random() * options.maxSize,
+  endPositionTop = documentHeight - 200,
+  endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+  durationFall = documentHeight * 10 + Math.random() * 5000;
+  $flake.clone().appendTo('body').css({
+     left: startPositionLeft,
+     opacity: startOpacity,
+     'font-size': sizeFlake,
+     color: options.flakeColor   }).animate({
+     top: endPositionTop,
+     left: endPositionLeft,
+     opacity: 0.2
+  },durationFall,'linear',function(){
+       $(this).remove()
+  });
+  }, options.newOn);
+   };
+   })(jQuery);$(function(){
+   $.fn.snow({
+      minSize: 5, /* 定义雪花最小尺寸 */
+      maxSize: 50,/* 定义雪花最大尺寸 */
+      newOn: 100  /* 定义密集程度，数字越小越密集 */
+   });});</script>
+</html>
