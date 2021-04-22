@@ -1,0 +1,33 @@
+.nav ul{
+
+	width: 100%; /* //设置元素宽度为980px */
+	height: 100%;
+	border: 0.0625rem solid #6495ED; /* 设置一个颜色为蓝色 宽度为1px的边框 */
+	margin: 0rem auto 0rem auto;/* 也可以简写为 0px auto */
+}
+.nav ul li{
+	float:  left; /* 边框之所以挤到一起了是因为浮动以后 li就变成了联级元素，就没有宽和高了，所以也就没法把边框撑起来了啊。（具体的原因想知道可以百度）当然稍后我们可以给ul或.nav加上高度 */
+	list-style: none;
+}
+.nav ul li a{
+	width:20% ;
+	height: 75%;
+	line-height: 1.75rem; /* 设置行间距为28px 让蚊子在每行的中间位置*/
+	color: powderblue;/* 文字颜色 */
+	background:cadetblue;
+	margin: 0.3125rem 0.625rem;
+	font-size: 0.75rem;/* 用12🐀 */
+	display: ;/* 因为a本身是联级元素,本身不就有宽和高,把它变
+					成块级元素,前面设置的宽和高就可以起作用了 */
+					float: left;
+	text-align: center;/* 文本居中 */
+	text-decoration: none;
+}
+.nav ul li a:hover {
+	width: 4.875rem;
+	height: 1.625rem;
+	line-height: 1.75rem;
+	border: 0.0625rem solid red;
+	color:palevioletred;
+	background: deepskyblue;
+	}

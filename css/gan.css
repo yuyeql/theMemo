@@ -1,0 +1,56 @@
+.container {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 270px; 
+}
+/*使用绝对定位，使全部图片叠加到一块*/
+.box, .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*下面小圆点，使用绝对定位，位于图片的正下方*/
+.circle {
+    width: 200px;
+    height: 14px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    cursor: pointer;
+}
+/*每个小圆点的样式*/
+.circle b {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 3px;
+}
+/*小圆点的当前样式，也是鼠标移上去的样式*/
+.circle .current {
+    background-color: #fff;
+}
+/*左右两侧的按钮，采用绝对定位*/
+.btn {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 50px;
+    margin-top: -25px;
+    background-color: rgba(255, 255, 255, .7);
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
